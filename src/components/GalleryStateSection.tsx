@@ -1,51 +1,55 @@
 import ParticleText from "@/components/ui/particle-text";
 import ArcFlowCarousel, { type SmoothSliderItem } from "@/components/ui/arc-flow-carousel";
 
+const base = import.meta.env.BASE_URL.endsWith('/') 
+  ? import.meta.env.BASE_URL 
+  : `${import.meta.env.BASE_URL}/`;
+
 const CAROUSEL_ITEMS: SmoothSliderItem[] = [
   {
-    src: "/images/carousel/pillars_of_creation.jpg",
+    src: `${base}images/carousel/pillars_of_creation.jpg`,
     alt: "Pillars of Creation",
     title: "Pillars of Creation",
     description: "James Webb NIRCam cosmic star-forming pillars in the Eagle Nebula.",
   },
   {
-    src: "/images/carousel/tarantula_nebula.jpg",
+    src: `${base}images/carousel/tarantula_nebula.jpg`,
     alt: "Tarantula Nebula",
     title: "Tarantula Nebula",
     description: "Infrared stellar nursery spanning thousands of light-years across space.",
   },
   {
-    src: "/images/carousel/quantum_waves.jpg",
+    src: `${base}images/carousel/quantum_waves.jpg`,
     alt: "Quantum Waves",
     title: "Quantum Waves",
     description: "Pure 3D procedural parametric wave dynamics in deep cobalt blue.",
   },
   {
-    src: "/images/carousel/deep_field.jpg",
+    src: `${base}images/carousel/deep_field.jpg`,
     alt: "Cosmic Deep Field",
     title: "Cosmic Deep Field",
     description: "Gravitational lensing revealing thousands of ancient celestial galaxies.",
   },
   {
-    src: "/images/carousel/fluid_horizon.jpg",
+    src: `${base}images/carousel/fluid_horizon.jpg`,
     alt: "Fluid Horizon",
     title: "Fluid Horizon",
     description: "Minimalist dark iridescent chromatic curvature and abstract light flow.",
   },
   {
-    src: "/images/carousel/jupiter_aurora.jpg",
+    src: `${base}images/carousel/jupiter_aurora.jpg`,
     alt: "Jovian Atmosphere",
     title: "Jovian Atmosphere",
     description: "Spectroscopic thermal infrared auroras dancing across planetary poles.",
   },
   {
-    src: "/images/carousel/andromeda_galaxy.jpg",
+    src: `${base}images/carousel/andromeda_galaxy.jpg`,
     alt: "Andromeda Spiral",
     title: "Andromeda Spiral",
     description: "Interstellar dust lanes and core galactic luminescence across the local group.",
   },
   {
-    src: "/images/carousel/starry_milkyway.jpg",
+    src: `${base}images/carousel/starry_milkyway.jpg`,
     alt: "Stellar Expanse",
     title: "Stellar Expanse",
     description: "Deep cosmos observational field capturing millions of distant stars.",
