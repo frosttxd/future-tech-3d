@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --color-bg: #020306;
+  --color-ivory: #FDFCF4;
+}
+
+:root {
+  font-family: var(--font-sans);
+  background-color: #020306;
+  color: #FDFCF4;
+  color-scheme: dark;
+}
+
+html {
+  background-color: #020306;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #020306;
+  color: #FDFCF4;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  background-color: #020306;
+}
+
+/* Futuristic custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020306;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  border: 2px solid #020306;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f5ff;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rainbow-rotate {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+.animate-rainbow {
+  animation: rainbow-rotate var(--rainbow-duration, 3s) linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow var(--spin-duration, 5s) linear infinite;
+}
+
