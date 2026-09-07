@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/my-sample-website5/',
+  base: '/future-tech-3d/',
   plugins: [
     react(),
     tailwindcss(),
@@ -41,5 +41,3 @@ export default defineConfig({
     },
   },
 })
-
-
